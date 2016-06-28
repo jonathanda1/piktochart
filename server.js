@@ -4,9 +4,11 @@ const express = require( 'express' );
 const multer = require( 'multer' );
 const fs = require( 'fs' );
 const junk = require( 'junk' );
+// const bodyParser = require('body-parser');
 let app = express();
 
 app.use( express.static('./') );
+// app.use(bodyParser({uploadDir:'/code/wdi/workspace/forfun/piktojstest-create_editor/images'}));
 
 // define file name and destination to save
 let storage = multer.diskStorage({
